@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Experiences</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Stephen</span>
+        </div>
+        <div class="links">
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <a href="home.html">Home</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <a href="projects.html">Projects</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <a href="experience.html">Experiences</a>
+          </div>
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars tabs" onclick="tabs()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="home.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experiences</a>
+          <a href="">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <h1 id="head">Experiences</h1>
+    <div class="container-fluid">
+      <div class="main-container">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+          <img src="images/Orbital.jpg" alt="" width="2%" />
+        </div>
+        <div class="details">
+          <h2>UW Orbital</h2>
+          <p>
+            On the UW Orbital team, we're building a satallite that will allow
+            amateur radio operators to take real time photos of their current
+            location on Earth. I've personally had the oppurtunity to work on
+            the arducam shield portion of the project, a subsystem of the camera
+            module.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="main-container">
+        <div class="details">
+          <h2>VEX Robotics</h2>
+          <p>
+            VEX Robotics Competition (VRC) is a competitive robotics league
+            where teams compete to build functioning metal robots. The robots
+            are designed to play a variety of games with teams having near
+            complete freedom to design their machine. I was an executive on my
+            school's VEX team. My role was to lead the build and design of the
+            robot. I was also responsible for training newer members of the
+            club, and teaching them the basics of VEX building. As a team, we
+            worked to build a functioning robot capable of driving both
+            autonomously and with user input. The robots were designed and built
+            from scratch using mostly metal parts. In our first year, the team
+            qualified and participated in the Ontario Provincial Competition. We
+            qualified for Worlds in only our second year of competition.
+          </p>
+        </div>
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+          <img src="images/VEX.JPG" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="main-container">
+        <div class="image">
+          <img src="images/reach.JPG" alt="" />
+        </div>
+        <div class="details">
+          <h2>Competitive Trivia</h2>
+          <p>
+            “Reach for the Top” and Consensus Trivia are team-based trivia
+            games, similar to Jeopardy or Quiz Bowl. In teams of four, students
+            attempt to answer a variety of trivia questions ranging from history
+            to sports to current events to historical politics. As the
+            Competitive Trivia club captain at my school, my role was to create
+            a competitive team by recruiting strong players, providing coaching
+            and training to all participants, as well as facilitating practices.
+            I was also responsible for leading the team in tournaments, making
+            strategic decisions on team composition and acting as a liaison with
+            tournament directors.The UTS Competitive Trivia team won the 2023
+            and 2024 Reach for the Top and Consensus Trivia National
+            Championships.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script>
+      function tabs() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+  </body>
+</html>

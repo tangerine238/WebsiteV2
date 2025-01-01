@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Stephen</span>
+        </div>
+        <div class="links">
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <a href="home.html">Home</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <a href="projects.html">Projects</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <a href="experience.html">Experiences</a>
+          </div>
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars tabs" onclick="tabs()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="home.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experiences</a>
+          <a href="">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <h1 id="head">Projects</h1>
+    <div class="container-fluid">
+      <div class="wheelchair">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+          <img src="images/wheelchair.png" width="100%" alt="" />
+        </div>
+        <div class="details">
+          <h2>Voice Controlled Wheelchair</h2>
+          <a href="https://youtu.be/Ehrhy8XFH9U" target="_blank">
+            <h3>Link</h3>
+          </a>
+          <p>
+            The voice controlled wheelchair aims to give people with more severe
+            mobility issues, greater freedom in their day to day life. Audio
+            input from your phone is sent through a server and deciphered using
+            a vosk model. Commands are recieved from this input and are sent via
+            netcat to the chair. Anything from turning to reversing and stopping
+            is possible. The chair also has a built in emergency stop feature.
+            The chair will automatically stop when too close to an obstacle like
+            a wall.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="cybercity">
+        <div class="details">
+          <h2>CyberCity</h2>
+          <a href="https://youtu.be/zponDq4yUjY" target="_blank">
+            <h3>Link</h3>
+          </a>
+          <p>
+            Cybercity is a 2D platformer made in Godot. Players navigate levels,
+            fight mobs, and challenge bosses in a futuristic landscape.
+          </p>
+        </div>
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+          <img src="images/cyber.png" width="100%" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script>
+      function tabs() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+  </body>
+</html>
