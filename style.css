@@ -149,6 +149,7 @@ section{
 }
 .cybercity .image{
     width: 40%;
+    z-index: -1;
 }
 .wheelchair .image{
     width: 40%;
