@@ -152,6 +152,7 @@ section{
     z-index: -1;
 }
 .wheelchair .image{
+    z-index: -1;
     width: 40%;
 }
 .main-container .image img{
